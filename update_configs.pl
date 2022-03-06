@@ -9,12 +9,12 @@ use POSIX qw(strftime);
  
 say "Switching Directories to: ", "$ENV{'BACKUP_CONFIG_DIR'}";
 chdir "$ENV{'BACKUP_CONFIG_DIR'}";
-my $date = strftime "%m/%d/%Y", localtime;
+my $date = strftime "%m_%d_%Y", localtime;
 say "Copying Configs";
 my $output = `./get_configs.sh`;
 say "Updating Configs: $date";
-`git add *`;
 `echo $date >> date_entry`;
+`git add *`;
 `git commit -m "Auto Update: $date"`;
 `git pull --rebase`;
 `git push`;
