@@ -5,7 +5,7 @@ use strict;
 use POSIX qw(strftime);
 # WIP: The idea here is to update all my config repositories automatically everyday 
 # Ok, what are we doing.
-# 1. Copy Over Configs to the config repo
+# 1. Copy Over Configs to the config repo and push
  
 say "Switching Directories to: ", "$ENV{'BACKUP_CONFIG_DIR'}";
 chdir "$ENV{'BACKUP_CONFIG_DIR'}";
