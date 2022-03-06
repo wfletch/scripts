@@ -1,1 +1,1 @@
-crontab 0 0 * * * ./update_configs.pl 
+crontab /Users/fletch/Programming/git_tree/wfletch/scripts/update_configs.pl 0 0 * * *
