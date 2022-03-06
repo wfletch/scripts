@@ -19,3 +19,4 @@ say "Updating Configs: $date";
 `git pull --rebase`;
 `git push`;
 say "All Done";
+# TODO: Get Hash of the daily input.
