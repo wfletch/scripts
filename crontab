@@ -1,1 +1,1 @@
-crontab /Users/$USER/Programming/git_tree/wfletch/scripts/update_configs.pl 0 0 * * *
+crontab /Users/$USER/Programming/git_tree/wfletch/scripts/update_configs.pl 10 0 * * *
