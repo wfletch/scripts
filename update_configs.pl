@@ -7,8 +7,8 @@ use POSIX qw(strftime);
 # Ok, what are we doing.
 # 1. Copy Over Configs to the config repo and push
  
-say "Switching Directories to: ", "$ENV{'BACKUP_CONFIG_DIR'}";
-chdir "$ENV{'BACKUP_CONFIG_DIR'}";
+say "Switching Directories to: ", "/Users/fletch/Programming/git_tree/wfletch/configs";
+chdir "/Users/fletch/Programming/git_tree/wfletch/configs";
 my $date = strftime "%m_%d_%Y", localtime;
 say "Copying Configs";
 my $output = `./get_configs.sh`;
